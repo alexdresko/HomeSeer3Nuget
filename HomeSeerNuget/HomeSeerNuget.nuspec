@@ -1,67 +1,66 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
-	<metadata>
-		<!-- The identifier that must be unique within the hosting gallery -->
-		<id>
+  <metadata>
+    <!-- The identifier that must be unique within the hosting gallery -->
+    <id>
 			homeseer
 		</id>
-		<!-- The package version number that is used when resolving dependencies -->
-		<version>
-			1.0.0
-		</version>
-		<!-- Authors contain text that appears directly on the gallery -->
-		<authors>
+    <!-- The package version number that is used when resolving dependencies -->
+    <version>1.0.0</version>
+    <!-- Authors contain text that appears directly on the gallery -->
+    <authors>
 			Alex Dresko
 		</authors>
-		<!--
+    <!--
 		Owners are typically nuget.org identities that allow gallery
 		users to earily find other packages by the same owners.
 		-->
-		<owners>
+    <owners>
 			alexdresko
 		</owners>
-		<!-- License and project URLs provide links for the gallery -->
-		<licenseUrl>
+    <!-- License and project URLs provide links for the gallery -->
+    <licenseUrl>
 			http://www.homeseer.com
 		</licenseUrl>
-		<projectUrl>
+    <projectUrl>
 			https://github.com/alexdresko/HomeSeerNuget
 		</projectUrl>
-		<!-- The icon is used in Visual Studio's package manager UI -->
-		<iconUrl>
+    <!-- The icon is used in Visual Studio's package manager UI -->
+    <iconUrl>
 			https://raw.githubusercontent.com/alexdresko/HomeSeerNuget/master/HS-Button_400x400.png
 		</iconUrl>
-		<!--
+    <!--
 		If true, this value prompts the user to accept the license when
 		installing the package.
 		-->
-		<requireLicenseAcceptance>
+    <requireLicenseAcceptance>
 			true
 		</requireLicenseAcceptance>
-		<!-- Any details about this particular release -->
-		<releaseNotes>
-			Initial release
-		</releaseNotes>
-		<!--
+    <!-- Any details about this particular release -->
+    <releaseNotes>
+			Includes the following HomeSeer assemblies:
+
+</releaseNotes>
+    <!--
 		The description can be used in package manager UI. Note that the
 		nuget.org gallery uses information you add in the portal.
 		-->
-		<description>
+    <description>
 			HomeSeerAPI.dll, HSCF.dll, Scheduler.dll
 		</description>
-		<!-- Copyright information -->
-		<copyright>
+    <!-- Copyright information -->
+    <copyright>
 			See www.HomeSeer.com
 		</copyright>
-		<!-- Tags appear in the gallery and can be used for tag searches -->
-		<tags>
+    <!-- Tags appear in the gallery and can be used for tag searches -->
+    <tags>
 			homeseer home automation
 		</tags>
-	</metadata>
-	<!-- A readme.txt will be displayed when the package is installed -->
-	<files>
-		<file src="lib\net45\HomeSeerAPI.dll" target="lib\net45" />
-		<file src="lib\net45\HSCF.dll" target="lib\net45" />
-		<file src="lib\net45\Scheduler.dll" target="lib\net45" />
-	</files>
+  </metadata>
+  <!-- A readme.txt will be displayed when the package is installed -->
+  <files>
+    <file src="lib\net45\HomeSeerAPI.dll" target="lib\net45" />
+    <file src="lib\net45\HSCF.dll" target="lib\net45" />
+    <file src="lib\net45\Scheduler.dll" target="lib\net45" />
+  </files>
 </package>

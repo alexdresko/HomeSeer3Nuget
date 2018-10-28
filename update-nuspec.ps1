@@ -14,7 +14,12 @@ if ($newVersion -eq "") {
     $newVersion = $newVersion -replace "(\d*\.\d*\.\d*).*", "`$1"
 }
 
+
 $xml.package.metadata.version = $newVersion
+
+$info = get-childitem .\HomeSeerNuget\lib -include *.dll -Recurse | foreach-object { "{0}`t{1}`n" -f $_.Name, [System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion }
+
+$xml.package.metadata.releaseNotes = $xml.package.metadata.releaseNotes + $info
 
 $xml.Save($file)
 
