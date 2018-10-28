@@ -2,7 +2,7 @@
   [string]$newVersion
 )
 
-$file = ".\HomeSeerNuget\HomeSeerNuget.nuspec"
+$file = "$PSScriptRoot\HomeSeerNuget\HomeSeerNuget.nuspec"
 
 [xml]$xml = get-content -Path $file
 
