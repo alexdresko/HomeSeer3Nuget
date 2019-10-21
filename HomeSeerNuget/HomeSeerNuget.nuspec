@@ -3,7 +3,7 @@
   <metadata>
     <!-- The identifier that must be unique within the hosting gallery -->
     <id>
-			homeseer
+			homeseer3
 		</id>
     <!-- The package version number that is used when resolving dependencies -->
     <version>1.0.0</version>
@@ -23,11 +23,11 @@
 			http://www.homeseer.com
 		</licenseUrl>
     <projectUrl>
-			https://github.com/alexdresko/HomeSeerNuget
+			https://github.com/alexdresko/HomeSeer3Nuget
 		</projectUrl>
     <!-- The icon is used in Visual Studio's package manager UI -->
     <iconUrl>
-			https://raw.githubusercontent.com/alexdresko/HomeSeerNuget/master/HS-Button_400x400.png
+			https://raw.githubusercontent.com/alexdresko/HomeSeer3Nuget/master/HS-Button_400x400.png
 		</iconUrl>
     <!--
 		If true, this value prompts the user to accept the license when
@@ -46,8 +46,8 @@
 		nuget.org gallery uses information you add in the portal.
 		-->
     <description>
-			HomeSeerAPI.dll, HSCF.dll, Scheduler.dll
-		</description>
+      Unofficial nuget package containing HomeSeer 3 assemblies required for HomeSeer 3 plugin development
+    </description>
     <!-- Copyright information -->
     <copyright>
 			See www.HomeSeer.com
